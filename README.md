@@ -1,80 +1,80 @@
 # REST API - Node.js
 
-Esta es una REST API simple implementada en Node.js utilizando Express. Proporciona operaciones CRUD básicas para gestionar una lista de estudiantes.
+This is a simple REST API implemented in Node.js using Express. Provides basic CRUD operations to manage a list of students.
 
-## Requisitos
+## Requirements
 
-Antes de ejecutar la aplicación, asegúrate de tener lo siguiente instalado:
+Before running the app, make sure you have the following installed:
 
-- Node.js v12 o superior
+- Node.js v12 or higher
 - npm (Node Package Manager)
 
-## Instalación y Ejecución
+## Installation and Execution
 
-### Paso 1: Clonar el Repositorio
+### Step 1: Clone the Repository
 
-Clona este repositorio en tu máquina local:
+Clone this repository to your local machine:
 
 ```bash
 git clone https://github.com/tu_usuario/tu_repositorio.git
-cd tu_repositorio
+cd your_repository
 ```
 
-### Paso 2: Instalar Dependencias
+### Step 2: Install Dependencies
 
-Ejecuta el siguiente comando para instalar las dependencias necesarias:
+Run the following command to install the necessary dependencies:
 
 ```bash
 npm install
 ```
 
-### Paso 3: Ejecutar la Aplicación
+### Step 3: Run the Application
 
-Inicia el servidor de la API con el siguiente comando:
+Start the API server with the following command:
 
 ```bash
 node app.js
 ```
 
-El servidor estará disponible en `http://localhost:80/`.
+The server will be available at `http://localhost:80/`.
 
-## Endpoints Disponibles
+## Available Endpoints
 
-### Raíz
+### Root
 - **GET** `/`
-  Devuelve un mensaje de bienvenida: `Node JS api`.
+  Returns a welcome message: `Node JS api`.
 
-### Estudiantes
+### Students
 
 - **GET** `/api/students`
-  Devuelve una lista de todos los estudiantes.
+  Returns a list of all students.
 
 - **GET** `/api/students/:id`
-  Devuelve los detalles de un estudiante por su ID.
-  - **Respuesta de Error**: 404 si el estudiante no se encuentra.
+  Returns the details of a student by their ID.
+  - **Error Response**: 404 if the student is not found.
 
 - **POST** `/api/students`
-  Agrega un nuevo estudiante. Requiere un cuerpo JSON con las siguientes propiedades:
+  Add a new student. Requires a JSON body with the following properties:
   ```json
   {
-    "name": "Nombre del estudiante",
-    "age": "Edad del estudiante",
+    "name": "Student name",
+    "age": "Student's age",
     "enroll": "true/false"
   }
   ```
 
 - **DELETE** `/api/students/:id`
-  Elimina un estudiante por su ID.
-  - **Respuesta de Error**: 404 si el estudiante no se encuentra.
+  Delete a student by their ID.
+  - **Error Response**: 404 if the student is not found.
 
-## Archivos Importantes
+## Important Files
 
-- **`app.js`**: Contiene la lógica principal de la API.
+- **`app.js`**: Contains the main logic of the API.
 
-## Contribución
+## Contribution
 
-Si deseas contribuir a este proyecto, por favor, realiza un fork del repositorio, haz tus cambios y abre un Pull Request.
+If you want to contribute to this project, please fork the repository, make your changes and open a Pull Request.
 
-## Licencia
+## License
 
-Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
