@@ -16,8 +16,8 @@ Before running the app, make sure you have the following installed:
 Clone this repository to your local machine:
 
 ```bash
-git clone https://github.com/tu_usuario/tu_repositorio.git
-cd your_repository
+git clone https://github.com/JordinPinzon/my-rest-api.git
+cd my-rest-api
 ```
 
 ### Step 2: Install Dependencies
